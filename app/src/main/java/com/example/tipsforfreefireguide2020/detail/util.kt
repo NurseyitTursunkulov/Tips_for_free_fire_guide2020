@@ -55,7 +55,22 @@ fun showInterstitialAdvertSafe(interstitialAd: InterstitialAd) {
 fun ScreenSlidePageFragment.getRandomImage(): Int {
     val images =
         intArrayOf(
-            R.drawable.foot5 //ok
+            R.drawable.foot1, //ok
+            R.drawable.foot2, //ok
+            R.drawable.foot3, //ok
+            R.drawable.foot4, //ok
+            R.drawable.foot5, //ok
+            R.drawable.foot6, //ok
+            R.drawable.foot7, //ok
+            R.drawable.foot8, //ok
+            R.drawable.foot9, //ok
+            R.drawable.foot10, //ok
+            R.drawable.foot11, //ok
+            R.drawable.foot12, //ok
+            R.drawable.foot13, //ok
+            R.drawable.foot14, //ok
+            R.drawable.foot15, //ok
+            R.drawable.foot16 //ok
         )
     val rand = Random()
     return images[rand.nextInt(images.size)]

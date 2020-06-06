@@ -116,6 +116,36 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 title = getString(R.string.book_10_title),
                 body = getString(R.string.book_10_body),
                 imageId = R.drawable.foot10
+            ),
+            Book(
+                title = getString(R.string.book_12_title),
+                body = getString(R.string.book_12_body),
+                imageId = R.drawable.foot11
+            ),
+            Book(
+                title = getString(R.string.book_13_title),
+                body = getString(R.string.book_13_body),
+                imageId = R.drawable.foot12
+            ),
+            Book(
+                title = getString(R.string.book_14_title),
+                body = getString(R.string.book_14_body),
+                imageId = R.drawable.foot13
+            ),
+            Book(
+                title = getString(R.string.book_15_title),
+                body = getString(R.string.book_15_body),
+                imageId = R.drawable.foot14
+            ),
+            Book(
+                title = getString(R.string.book_16_title),
+                body = getString(R.string.book_16_body),
+                imageId = R.drawable.foot15
+            ),
+            Book(
+                title = getString(R.string.book_17_title),
+                body = getString(R.string.book_17_body),
+                imageId = R.drawable.foot16
             )
         )
     }

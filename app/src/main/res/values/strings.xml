@@ -1,106 +1,192 @@
 <resources>
     <string name="app_name" translatable="false">Guide for Winner</string>
-    <string name="app_name_for_title">Guide for Mini Militia Doodle gun</string>
+    <string name="app_name_for_title">Tips For Free Fire Guide 2020</string>
     <string name="hello_world">Hello World!</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="book1title">About Mini Militia Doodle gun</string>
-    <string name="book1body">Mini Militia is an online and offline 2D shooter, released back in 2011 for iOS and 2015 for Android. According to reports, it was listed as one of the top games in India for the year 2017.
-        \n\n
+    <string name="book1title">About Tips For Free Fire Guide 2020</string>
+    <string name="book1body">Garena\'s Free Fire is one of the most popular mobile games in the
+    world. As of August 2019, Free Fire has over 450 million registered users and over 50 million
+    daily active players.
+    \n\n
 
-Although the game is pretty simple and easy to play, for new players, it can be hard as they don’t know much about how to play the game. So, Here are some tips and tricks for you while you play Mini Militia!</string>
-    <string name="book_1_title">Never Combat with Pros</string>
+    Beginners who are just starting with Free Fire might feel daunted and mighty confused playing
+    against gamers who are much more experienced.
+    \n
+    \n
+    It\'s important to know the do\'s and dont\'s of any game before you start playing it and here are
+    a few tips for gamers who are just starting with Free Fire.
+    \n
+    \n
+    </string>
+    <string name="book_1_title">Auto Headshot Settings for Free Fire</string>
     <string name="book_1_body">
-        If you are a newbie or an amateur, then it is best for you that you avoid getting into combat with a pro who has high scores. Pro Players have a lot of experience and for starters, they are hard to beat and it is not an easy thing to combat against them.
+
+    • General: 50 \n
+    • Red Dot: 100\n
+    • 2x Scope: 16 \n
+    • 4x Scope: 18 \n
+    • AWM Scope: 20 \n
         \n
         \n
 
-        If you have some skills then you should try out your luck, but buy a pro pack first in-order to use dual weapons and have a better chance against them.
+       Here are the steps to apply the Auto Headshot settings:
+        \n
+        \n
+
+    1. Open Garena Free Fire.\n
+    2. Navigate to the game settings and locate the sensitivity option.\n
+    3. Set all the sensitivity sliders, as shown above in the image.\n
+    4. Hit the save button and close the settings tab\n
+        \n
+        \n
+        After following the steps, one only needs to aim at the body of the opponent and slide the weapon slightly upwards. The crosshair will aim automatically at the head of the enemy. It is the most recommended setting for beginners to improve their aiming.
+        \n
+        \n
+        In fact, even professional players use similar settings to enhance their game. Though one might be a little less accurate at the start, one can master the technique with a bit of practice.
+        \n
+        \n
+        Thus, after coming to grips with the aforementioned technique, one will not have to worry about controlling the recoil of the weapon one is carrying. One can easily get the better of their opponents and emerge triumphant each time they play Free Fire.
+        \n
+        \n
+
+    </string>
+    <string name="book_2_title">Know Your Character Well</string>
+    <string name="book_2_body">The first tip of a pro player is knowing your character well. There are 15 characters with different strengths and skills. You should know them well to get the best uses of their strengths and promote their abilities. The tip is using Miguel\'s character with the specialty of the crazy slayer that gives him EPs for each kill and provides him with the power of Kia and Kelly. Miguel, with Kelly and Kia\'s strengths, is the ultimate combo to become a pro.
         \n
         \n
     </string>
-    <string name="book_2_title">Never Combat with Hackers</string>
-    <string name="book_2_body">Hackers are cowards and they are found in almost every game. They kill the essence of the game and ruin everything. If you combat hackers then you will not enjoy the game and rather you would like to uninstall the game. They are using the hack and have unlimited strength and are hard to kill. It’s better to just avoid combating with them.
-        \n
-        \n
-    </string>
-    <string name="book_3_title">Choose a Powerful Gun</string>
+    <string name="book_3_title">Understand Your Weapons</string>
     <string name="book_3_body">
-        While combating one of the things that can help you greatly against your rivals is a powerful gun. Always try to choose a powerful gun such as M16, Rocket Launcher or Rifles as they will let you kill the other players in one or two shots.
+        Another pro tip for Free Fire player is knowing your weapon well, like the distance covered and shooting capacity, damage capacity of guns and bullets, etc. There are six major groups of firearms in Free Fire: SMG, Shotgun, Assault Rifle, Sniper Gun, Pistol, and other weapons like pan, bat, grenade, crossbow, and parang. You should be aware of some basic features of your forte weapons, including power, clip size, range, accuracy, rate of fire. One of the most amazing Free Fire pro tips is putting a pan in your back. It can protect you from firing from enemies behind.
         \n
         \n
-        If you are good at sniping, then it gives you an extra edge.
+        Choosing a proper weapon will make you more professional and stronger in this game. Understanding your gun is more helpful than a Free Fire headshot trick. You can cause more damage to enemies and clear more opponents when making full use of your guns.
         \n
         \n
     </string>
-    <string name="book_4_title">Use a Shield</string>
+    <string name="book_4_title">Pro Free Fire Tricks: Proper Tactics for Certain Games</string>
     <string name="book_4_body">
-        While in combat, it always a good choice to have something that can protect you from others killing you. When you use a Shield in Mini Militia, it will help you defend against the shooting from your enemies and will help you to survive longer.
-        \n
-        \n
-        A combination of Shield with UZI or Revolver works best.
+       To become the last man standing on the map, you should have an appropriate plan for each game. Killing Spree is suitable for squad mode when you are in a team and have to do daily tasks, Elite Pass missions, or veteran missions. In Squad or Duo mode in rank games, you should fire and hide, try to survive with your teammates till the end of the battle to earn ranking more points. Evading and enduring are the best tips for every mode. Don\'t feel ashamed when evading for surviving if you cannot alone fight against a team of four or three. Your aim is standing still at last. So, have a proper tactic one of the essential Free Fire tricks.
         \n
         \n
     </string>
-    <string name="book_5_title">Double Guns
+    <string name="book_5_title">Best Free Fire Tricks: Weapon First
 </string>
     <string name="book_5_body">
-       A combination of two guns will help you kill more people in the game and you will have a higher chance of getting a high rank.
+       After landing from the parachute, you need to run around and find armor and weapon first in case you can be killed by enemies. It\'s the rule for any battle royale game like PlayerUnknown\'s Battlegrounds or Fortnite Battle Royale. Don\'t try to find other supplies. You need a gun in your hand to defend yourself when you meet other players by chance.
         \n
         \n
-        One of the best combinations in the game is Shotgun and Sniper. One can help you with a short range, while the latter can help you in the long range.
-        \n
-        \n
-        Rifle and Sniper combination is also very useful. Try picking different combinations and choose which works best for you.
+        Then, run to find an armor. It would be lucky if you can find high-level armor and helmet to protect your body from firing. Then, you can go and find other supplies like a bag, more than ten med-kits, a pan, more than one scope, for your two guns.
         \n
         \n
     </string>
-    <string name="book_6_title">Ammo Reload Time
+    <string name="book_6_title">Free Fire Tricks: Trees Vs. Vehicles
 </string>
     <string name="book_6_body">
-        One of thing that is very annoying that in close when you are shooting and your ammo runs out then the enemy kills you and it is very annoying, especially for guns that have low ammo capacity.
-        \n
-        \n
-        Therefore, it is important that before you encounter an enemy, make sure that your ammo is fully reloaded and try to aim at the enemy in order to preserve your bullets.
+        Vehicle helps you move around the map and sometimes kill an enemy from behind. But when the game is coming to an end, you will meet heroic and pro players. And the vehicle is so noisy that it would attract others\' attention and firing. Driving in the smaller safe zone makes you be a firing target in the small area. The tip is run on your foot and hide behind trees.
         \n
         \n
 
     </string>
-    <string name="book_7_title">Nitro
+    <string name="book_7_title">Free Fire Tricks for Airdrop Loot
 </string>
     <string name="book_7_body">
-        It is important that you try to main the nitro to full or near to full because when you encounter a powerful enemy and you just don’t have a powerful gun or are out of ammo, then you will be able to run away if you have full nitro. So, keep your nitro around full in order to escape from enemies when needed.
+        When you see the light emitted from an airdrop, don\'t rush to it right away. Wait and check the surrounding area carefully. Sometimes, enemies may lie in ambush around and wait for you to come. Then, the airdrop will become a bait. However, if there is no enemy around, quickly loot the weapons and supplies in the airdrop and run away. You can also lie in wait for other players to make some kills.
         \n
         \n
     </string>
-    <string name="book_8_title">Using Bombs and Grenades</string>
+    <string name="book_8_title">Get a Proper Weapon Combo</string>
     <string name="book_8_body">
-        Bombs and Grenades are an important part of the game and you should use them carefully. Try to place poison grenades in the area where enemies would spawn and it will kill them automatically.
+        Other Free Fire tips and tricks for free fire guild are having a correct weapon combo and using the right gun in a current shooting range. If you want to master any Garena games, you should know this tip.
         \n
         \n
-        If they throw a grenade towards you, you can either send it back quickly or run away to save your life.
+        When you fight in a close range, you should use an SMG or shotgun. Assault Rifles are the best choices for middle and long-range at which SMG and shotgun can\'t cause damage. Sniper Rifle is the best weapon for distance range. When you are running, keep a machine gun on your hand to get ready for any war. When enemies are running and jumping, use Assault Rifles to hit them.
+        \n
+        \n
+        Moreover, one of many secret Free Fire tricks for weapons is applying skins for guns. The skin does not only make your guns look better but it also increases the capacity of the weapons. It sounds unrealistic and illogic but it\'s true in this game. If you can\'t afford these skins, you can use Free Fire diamond tricks and generators to get unlimited gems.
         \n
         \n
 
     </string>
-    <string name="book_9_title">Switch Fist</string>
+    <string name="book_9_title">Keep Check the Mini-Maps</string>
     <string name="book_9_body">
-        During an encounter, if both you and your enemy run out of ammo then you should quickly switch over to fists and kill him with your hands.
+        You should keep an eye on the mini-maps to check the movements of your teammates, the safe zone, dangerous area, and position of vehicles on the island. Looking at the map, you also know where the fire at you comes from to hide and fire back. The tip is to check the enemy\'s movement on the mini-maps captured by UAV.
         \n
         \n
-        As he may be busy in reloading, while you can get close to him and kill your enemies with the fists.
+        These are the top ten Free Fire tricks and tips recommended by pro players. Try them now and get ready to level up as a pro in Free Fire. It would be more exciting and fun when winning the game without using cheat tools or Free Fire hacking tricks.
+        \n
+        \n
+        To update the latest game news and other useful Free Fire tricks and tips for players, let\'s visit our website Gurugamer.com. We\'ll give you lots of exciting mobile game news as well as interesting stories related to gaming.
         \n
         \n
     </string>
-    <string name="book_10_title">Suicide</string>
+    <string name="book_10_title">Know Where To Drop in Free Fire</string>
     <string name="book_10_body">
-        If you don’t want your enemies to have more kills than you, then you should consider committing suicide.
+        As simple and straightforward as it might sound, pre-planning the drop location before jumping is very beneficial. This saves a lot of time in the early game and eliminates the problem of early rotation.
         \n
         \n
-        When your health is running low then it is better to commit suicide instead of being killed as suicide won’t give any kill points to your enemies.
+       Depending upon the playstyle, players can either go hot drops like Clock Tower and Pochinok or land in less crowded areas like Cape Town and Hangar.
+        \n
+        \n
+        Hot drops yield a lot of loot but it’s highly contested, and there is always a risk of an early encounter with opponents in these locations.
         \n
         \n
     </string>
-    <string name="book_11_title"></string>
-    <string name="book_11_body"></string>
+    <string name="book_12_title">Don\'t Waste Time Looking For Perfect Loot in Free Fire</string>
+    <string name="book_12_body">
+        Although rolling out with the perfect loadout is the ideal scenario, it\'s not achievable in most cases. Grab what you can in game early and never say no to utilities like Grenade and Flashbang.
+        \n
+        \n
+        The process of looting should be quick and beware that you are not caught off guard while looting. Getting the perfect loot is not an instantaneous action but a building process.
+        \n
+        \n
+    </string>
+    <string name="book_13_title">Be Ready to Fight in Free Fire</string>
+    <string name="book_13_body">
+        A common mistake new players usually make is running away from fights. Be the one who takes charge as not only is it tactically superior, but also a healthier way to approach the game.
+        \n
+        \n
+        Even though you might struggle at the beginning but with more experience, you will develop a strong mental and good combat skills.
+        \n
+        \n
+    </string>
+    <string name="book_14_title">Crouch To Avoid Shotgun Bullet</string>
+    <string name="book_14_body">
+        Although shotguns cause great damage to players, these weapons can release only one bullet per shot. Then, it takes this gun a short period to reload ammo. Exploiting this disadvantage, you can avoid being knocked down by shotguns by crouching. When the enemy fires at you with a shotgun, you can crouch to avoid the bullet, then fire back at him while he is reloading ammo for the next shot.
+    </string>
+    <string name="book_15_title">Free Fire Pro Tips For House Attacks</string>
+    <string name="book_15_body">
+        One of the best Free Fire pro player tips is using grenade before rushing into houses or blocks. The explosion by the grenade causes some damage to the enemies camping insides. Then, you can rush into the house and kill him.
+        \n
+        \n
+        The next pro tip for rushing into houses is moving quietly. While moving, press the medkit button to move silently. It’s very helpful because you can make sudden attacks into the house without noticing the opponents inside the house.
+        \n
+        \n
+    </string>
+    <string name="book_16_title">Free Fire Pro Tips For Auto Headshot </string>
+    <string name="book_16_body">
+        If you use default aim precision, sometimes the auto-aim feature in Free Fire doesn’t work like what you wish. It’s recommended that you should choose Precise on Scope feature. It lets you do headshots easily and kill enemies quickly.
+        \n
+        \n
+        Here’re four steps of auto headshot tricks that you should learn: crouch, scope zoom in, then crouch, and fire. First, you crouch to avoid bullets from the enemies and have time to touch the scope button. Then, drag the aiming point to the head of the enemy, and fire.
+        \n
+        \n
+        Another headshot tip is jump shot. When you jump, it’s harder for the opponents to kill you with a headshot. Moreover, it’s easier to shoot at the enemy’s head from a higher position.
+        \n
+        \n
+
+    </string>
+    <string name="book_17_title">Make Use of Practice Mode in Free Fire</string>
+    <string name="book_17_body">
+        No success can be achieved in any multi-player game without regular practice in the right direction. There is a training mode available in the game, and it’s important to use the mode properly.
+        \n
+        \n
+        Trying every gun in training mode will give an idea to new players about recoil patterns and bullet drops of every weapon.
+        \n
+        \n
+        It’s also a great way to improve your accuracy and learning about different locations of the map thoroughly.
+        \n
+        \n
+    </string>
 
 </resources>
