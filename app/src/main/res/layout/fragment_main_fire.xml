@@ -10,14 +10,14 @@
 
         <variable
             name="viewmodel"
-            type="com.example.tipsforfreefireguide2020.MainViewModel" />
+            type="com.example.tipsforfreefireguide2020.MainViewModelFire" />
 
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".bookList.MainFragment">
+        tools:context=".bookList.MainFragmentFire">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/appbackground" />
+            android:src="@drawable/appbackground_fire" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_books"
@@ -53,7 +53,7 @@
 
             android:visibility="visible"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:listitem="@layout/list_item_book" />
+            tools:listitem="@layout/list_item_book_fire" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

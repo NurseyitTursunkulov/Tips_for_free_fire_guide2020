@@ -21,13 +21,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
-import com.example.tipsforfreefireguide2020.MainViewModel
+import com.example.tipsforfreefireguide2020.MainViewModelFire
 import com.example.tipsforfreefireguide2020.R
-import com.example.tipsforfreefireguide2020.databinding.ListItemBookBinding
+import com.example.tipsforfreefireguide2020.databinding.ListItemBookFireBinding
 import com.google.android.gms.ads.AdView
 
-class TasksAdapter(private val viewModel: MainViewModel) :
-    ListAdapter<Book, RecyclerView.ViewHolder>(TaskDiffCallback()) {
+class TasksAdapterFire(private val viewModelFire: MainViewModelFire) :
+    ListAdapter<Fire, RecyclerView.ViewHolder>(TaskDiffCallbackFire()) {
     private val MENU_ITEM_VIEW_TYPE = 0
 
     // The banner ad view type.
@@ -35,9 +35,9 @@ class TasksAdapter(private val viewModel: MainViewModel) :
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val item = getItem(position)
         when (holder) {
-            is ViewHolder -> holder.bind(viewModel, item)
+            is ViewHolderFire -> holder.bindFire(viewModelFire, item)
             else -> {
-                val bannerHolder = holder as AdViewHolder
+                val bannerHolder = holder as AdViewHolderFire
                 bannerHolder.bind()
             }
         }
@@ -46,53 +46,53 @@ class TasksAdapter(private val viewModel: MainViewModel) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
-            MENU_ITEM_VIEW_TYPE -> ViewHolder.from(parent)
+            MENU_ITEM_VIEW_TYPE -> ViewHolderFire.from(parent)
             else -> {
                 val bannerLayoutView = LayoutInflater.from(
                     parent.context
                 ).inflate(
-                    R.layout.banner_ad_container,
+                    R.layout.banner_ad_container_fire,
                     parent, false
                 )
-                AdViewHolder(bannerLayoutView)
+                AdViewHolderFire(bannerLayoutView)
             }
         }
     }
 
     override fun getItemViewType(position: Int): Int {
-        return if (position == 0 && viewModel.showAdvertState)
+        return if (position == 0 && viewModelFire.showAdvertState)
             BANNER_AD_VIEW_TYPE else MENU_ITEM_VIEW_TYPE
     }
 
-    class ViewHolder private constructor(val binding: ListItemBookBinding) :
+    class ViewHolderFire private constructor(val binding: ListItemBookFireBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(viewModel: MainViewModel, item: Book) {
+        fun bindFire(viewModelFire: MainViewModelFire, item: Fire) {
 
-            binding.viewmodel = viewModel
+            binding.viewmodel = viewModelFire
             binding.task = item
             binding.imageViewBookCover.load(item.imageId) {
                 crossfade(true)
-                placeholder(R.drawable.bookdash_placeholder)
+                placeholder(R.drawable.bookdash_placeholderfire)
             }
             binding.executePendingBindings()
         }
 
         companion object {
-            fun from(parent: ViewGroup): ViewHolder {
+            fun from(parent: ViewGroup): ViewHolderFire {
                 val layoutInflater = LayoutInflater.from(parent.context)
-                val binding = ListItemBookBinding.inflate(layoutInflater, parent, false)
+                val binding = ListItemBookFireBinding.inflate(layoutInflater, parent, false)
 
-                return ViewHolder(binding)
+                return ViewHolderFire(binding)
             }
         }
     }
 
-    class AdViewHolder internal constructor(view: View) :
+    class AdViewHolderFire internal constructor(view: View) :
         RecyclerView.ViewHolder(view) {
         var ad_view: AdView = view.findViewById(R.id.ad_viewR)
         fun bind() {
-            val adRequest = getAdRequest()
+            val adRequest = getAdRequestFire()
             ad_view.loadAd(adRequest)
         }
     }

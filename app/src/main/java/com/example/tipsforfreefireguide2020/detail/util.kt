@@ -6,15 +6,15 @@ import androidx.fragment.app.Fragment
 import com.androidsx.rateme.RateMeDialog
 import com.androidsx.rateme.RateMeDialogTimer
 import com.example.tipsforfreefireguide2020.R
-import com.example.tipsforfreefireguide2020.bookList.getAdRequest
+import com.example.tipsforfreefireguide2020.bookList.getAdRequestFire
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.InterstitialAd
-import kotlinx.android.synthetic.main.activity_screen_slide.*
+import kotlinx.android.synthetic.main.activity_screen_slidefire.*
 import java.util.*
 
 
-fun BookDetailFragment.initPendingIndicatorView() {
-    val book = viewModel.navigateToDetailEvent.value?.peekContent()
+fun BookDetailFragmentFire.initPendingIndicatorViewFire() {
+    val book = viewModelFire.navigateToDetailEvent.value?.peekContent()
 
     pageIndicatorView.count =
         book?.listOfContentPerPage?.size ?: 1 // specify total count of indicators
@@ -22,15 +22,15 @@ fun BookDetailFragment.initPendingIndicatorView() {
     pageIndicatorView.selection = 1
 }
 
-fun Fragment.showBannerAdvert(adView: AdView, showAdvertState: Boolean) {
+fun Fragment.showBannerAdvertFire(adView: AdView, showAdvertState: Boolean) {
     if (showAdvertState) {
         adView.visibility = View.VISIBLE
-        val adRequest = getAdRequest()
+        val adRequest = getAdRequestFire()
         adView.loadAd(adRequest)
     }
 }
 
-fun Fragment.showRateMeDialog() {
+fun Fragment.showRateMeDialogFire() {
     RateMeDialogTimer.onStart(requireContext())
     if (RateMeDialogTimer.shouldShowRateDialog(requireContext(), 1, 2)) {
         RateMeDialog.Builder(requireActivity().packageName, "")
@@ -44,7 +44,7 @@ fun Fragment.showRateMeDialog() {
     }
 }
 
-fun showInterstitialAdvertSafe(interstitialAd: InterstitialAd) {
+fun showInterstitialAdvertSafeFire(interstitialAd: InterstitialAd) {
     if (interstitialAd.isLoaded) {
         interstitialAd.show()
     } else {
@@ -52,25 +52,25 @@ fun showInterstitialAdvertSafe(interstitialAd: InterstitialAd) {
     }
 }
 
-fun ScreenSlidePageFragment.getRandomImage(): Int {
+fun ScreenSlidePageFragmentFire.getRandomImageFire(): Int {
     val images =
         intArrayOf(
-            R.drawable.foot1, //ok
-            R.drawable.foot2, //ok
-            R.drawable.foot3, //ok
-            R.drawable.foot4, //ok
-            R.drawable.foot5, //ok
-            R.drawable.foot6, //ok
-            R.drawable.foot7, //ok
-            R.drawable.foot8, //ok
-            R.drawable.foot9, //ok
-            R.drawable.foot10, //ok
-            R.drawable.foot11, //ok
-            R.drawable.foot12, //ok
-            R.drawable.foot13, //ok
-            R.drawable.foot14, //ok
-            R.drawable.foot15, //ok
-            R.drawable.foot16 //ok
+            R.drawable.foot1fire, //ok
+            R.drawable.foot2fire, //ok
+            R.drawable.foot3fire, //ok
+            R.drawable.foot4fire, //ok
+            R.drawable.foot5fire, //ok
+            R.drawable.foot6fire, //ok
+            R.drawable.foot7fire, //ok
+            R.drawable.foot8fire, //ok
+            R.drawable.foot9fire, //ok
+            R.drawable.foot10fire, //ok
+            R.drawable.foot11fire, //ok
+            R.drawable.foot12fire, //ok
+            R.drawable.foot13fire, //ok
+            R.drawable.foot14fire, //ok
+            R.drawable.foot15fire, //ok
+            R.drawable.foot16fire //ok
         )
     val rand = Random()
     return images[rand.nextInt(images.size)]

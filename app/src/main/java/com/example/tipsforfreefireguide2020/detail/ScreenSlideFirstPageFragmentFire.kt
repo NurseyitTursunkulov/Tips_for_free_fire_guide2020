@@ -7,16 +7,16 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.example.tipsforfreefireguide2020.MainViewModel
-import com.example.tipsforfreefireguide2020.databinding.FragmentBookDetailBinding
+import com.example.tipsforfreefireguide2020.MainViewModelFire
+import com.example.tipsforfreefireguide2020.databinding.FragmentBookDetailFireBinding
 import com.example.tipsforfreefireguide2020.util.EventObserver
-import kotlinx.android.synthetic.main.fragment_book_detail.*
+import kotlinx.android.synthetic.main.fragment_book_detail_fire.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
-class ScreenSlideFirstPageFragment : Fragment() {
+class ScreenSlideFirstPageFragmentFire : Fragment() {
     lateinit var content: String
-    lateinit var viewDataBinding: FragmentBookDetailBinding
-    val viewModel: MainViewModel by sharedViewModel()
+    lateinit var viewDataBinding: FragmentBookDetailFireBinding
+    val viewModelFire: MainViewModelFire by sharedViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +29,11 @@ class ScreenSlideFirstPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel.showAdvert()
+        viewModelFire.showAdvertFire()
         (activity as AppCompatActivity).supportActionBar?.show()
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
-        viewDataBinding = FragmentBookDetailBinding.inflate(inflater, container, false).apply {
-            bookInfo = viewModel.navigateToDetailEvent.value?.peekContent()
+        viewDataBinding = FragmentBookDetailFireBinding.inflate(inflater, container, false).apply {
+            bookInfo = viewModelFire.navigateToDetailEvent.value?.peekContent()
         }
         return viewDataBinding.root
     }
@@ -45,12 +45,12 @@ class ScreenSlideFirstPageFragment : Fragment() {
             requireActivity().onBackPressed()
         }
 
-        showBannerAdvert(ad_view_detail, viewModel.showAdvertState)
+        showBannerAdvertFire(ad_view_detail, viewModelFire.showAdvertState)
 
-        viewModel.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
-            showInterstitialAdvertSafe(viewModel.interstitialAd)
+        viewModelFire.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
+            showInterstitialAdvertSafeFire(viewModelFire.interstitialAd)
         })
-        viewModel.navigateToDetailEvent.value?.peekContent()?.imageId?.let {
+        viewModelFire.navigateToDetailEvent.value?.peekContent()?.imageId?.let {
             Glide
                 .with(this)
                 .load(it)
@@ -64,7 +64,7 @@ class ScreenSlideFirstPageFragment : Fragment() {
 
         @JvmStatic
         fun newInstance(content: String) =
-            ScreenSlideFirstPageFragment().apply {
+            ScreenSlideFirstPageFragmentFire().apply {
                 arguments = Bundle().apply {
                     putString(CONTENT, content)
                 }

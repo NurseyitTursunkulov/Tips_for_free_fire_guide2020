@@ -11,29 +11,29 @@ import com.google.android.gms.ads.RequestConfiguration
 import java.util.*
 
 
-fun MainFragment.initAdapter() {
+fun MainFragmentFire.initAdapterFire() {
     val viewModel = viewDataBinding.viewmodel
     if (viewModel != null) {
-        listAdapter = TasksAdapter(viewModel)
-        viewDataBinding.recyclerViewBooks.adapter = listAdapter
+        listAdapterFire = TasksAdapterFire(viewModel)
+        viewDataBinding.recyclerViewBooks.adapter = listAdapterFire
         viewDataBinding.recyclerViewBooks.layoutManager = GridLayoutManager(requireContext(), 2)
         if (viewModel.showAdvertState)
-            makeOneSpanForAdView()
+            makeOneSpanForAdViewFire()
         viewModel.items.observe(viewLifecycleOwner, Observer {
-            listAdapter.submitList(it)
+            listAdapterFire.submitList(it)
         })
     } else {
         //            Timber.w("ViewModel not initialized when attempting to set up adapter.")
     }
 }
 
-class TaskDiffCallback : DiffUtil.ItemCallback<Book>() {
+class TaskDiffCallbackFire : DiffUtil.ItemCallback<Fire>() {
 
-    override fun areItemsTheSame(oldItem: Book, newItem: Book): Boolean {
+    override fun areItemsTheSame(oldItem: Fire, newItem: Fire): Boolean {
         return oldItem.id == newItem.id
     }
 
-    override fun areContentsTheSame(oldItem: Book, newItem: Book): Boolean {
+    override fun areContentsTheSame(oldItem: Fire, newItem: Fire): Boolean {
         return oldItem == newItem
     }
 
@@ -45,7 +45,7 @@ fun setImageResource(imageView: ImageView, resource: Int) {
 
 }
 
-fun getAdRequest(): AdRequest? {
+fun getAdRequestFire(): AdRequest? {
     val adRequest = AdRequest.Builder().build()
     val testDeviceIds = Arrays.asList("F5E4CD8EA025C4062D9E4BE54D002D25")
     val configuration =
@@ -54,7 +54,7 @@ fun getAdRequest(): AdRequest? {
     return adRequest
 }
 
-private fun MainFragment.makeOneSpanForAdView() {
+private fun MainFragmentFire.makeOneSpanForAdViewFire() {
     (viewDataBinding.recyclerViewBooks.layoutManager as GridLayoutManager)
         .spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
         override fun getSpanSize(position: Int): Int {

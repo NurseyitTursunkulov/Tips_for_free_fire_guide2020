@@ -7,34 +7,34 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.tipsforfreefireguide2020.util.EventObserver
-import com.example.tipsforfreefireguide2020.util.divideTextToParts
-import com.example.tipsforfreefireguide2020.util.initAdvert
+import com.example.tipsforfreefireguide2020.util.divideTextToPartsFire
+import com.example.tipsforfreefireguide2020.util.initAdvertFire
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 
-class SplashFragment : Fragment(R.layout.splash_fragment) {
+class SplashFragmentFire : Fragment(R.layout.splash_fragment_fire) {
 
-    private val viewModel: MainViewModel by sharedViewModel()
+    private val viewModelFire: MainViewModelFire by sharedViewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.adView = initAdvert(requireContext())
-        val content = viewModel.items.value
+        viewModelFire.adView = initAdvertFire(requireContext())
+        val content = viewModelFire.items.value
         content?.let { bookList ->
-            divideTextToParts(bookList)
+            divideTextToPartsFire(bookList)
         }
 
-        viewModel.splashState.observe(viewLifecycleOwner,
+        viewModelFire.splashStateFire.observe(viewLifecycleOwner,
             EventObserver {
                 when (it) {
-                    is SplashState.MainActivity -> {
+                    is SplashStateFire.MainActivity -> {
                         findNavController().navigate(R.id.action_splashFragment_to_mainFragment)
                     }
                 }
             })
-        viewModel.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
-            if (viewModel.interstitialAd.isLoaded) {
-                viewModel.interstitialAd.show()
+        viewModelFire.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
+            if (viewModelFire.interstitialAd.isLoaded) {
+                viewModelFire.interstitialAd.show()
             } else {
                 Log.d("Nurs", "splash The interstitial wasn't loaded yet.")
             }

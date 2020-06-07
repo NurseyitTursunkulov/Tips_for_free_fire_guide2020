@@ -6,20 +6,20 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.example.tipsforfreefireguide2020.MainViewModel
+import com.example.tipsforfreefireguide2020.MainViewModelFire
 import com.example.tipsforfreefireguide2020.R
 import com.example.tipsforfreefireguide2020.util.EventObserver
-import com.example.tipsforfreefireguide2020.util.removeFullScreen
-import kotlinx.android.synthetic.main.detail_viewpager.*
+import com.example.tipsforfreefireguide2020.util.removeFullScreenFire
+import kotlinx.android.synthetic.main.detail_viewpager_fire.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 
-class ScreenSlidePageFragment :
-    Fragment(R.layout.detail_viewpager) {
+class ScreenSlidePageFragmentFire :
+    Fragment(R.layout.detail_viewpager_fire) {
     private lateinit var content: String
     private var position: Int = 0
 
-    val viewModel: MainViewModel by sharedViewModel()
+    val viewModelFire: MainViewModelFire by sharedViewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -31,25 +31,25 @@ class ScreenSlidePageFragment :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        removeFullScreen()
+        removeFullScreenFire()
         (activity as AppCompatActivity).supportActionBar?.show()
         content_text_view.text = content
-        toolbar.title = viewModel.navigateToDetailEvent.value?.peekContent()?.title
+        toolbar.title = viewModelFire.navigateToDetailEvent.value?.peekContent()?.title
         toolbar.setNavigationOnClickListener {
             requireActivity().onBackPressed()
         }
-        viewModel.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
-            showInterstitialAdvertSafe(viewModel.interstitialAd)
+        viewModelFire.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
+            showInterstitialAdvertSafeFire(viewModelFire.interstitialAd)
         })
-        showBannerAdvert(ad_view_detail_pager, viewModel.showAdvertState)
+        showBannerAdvertFire(ad_view_detail_pager, viewModelFire.showAdvertState)
 
         Glide
             .with(this)
-            .load(getRandomImage())
+            .load(getRandomImageFire())
             .fitCenter()
             .into(imageView)
 
-        showRateMeDialog()
+        showRateMeDialogFire()
     }
 
     override fun onResume() {
@@ -57,7 +57,7 @@ class ScreenSlidePageFragment :
         Log.d("Nurs", "onResume pos $position")
         if (position % 2 == 0) {
             Log.d("Nurs", "pos if $position")
-            viewModel.showAdvert()
+            viewModelFire.showAdvertFire()
         }
     }
 
@@ -67,7 +67,7 @@ class ScreenSlidePageFragment :
 
         @JvmStatic
         fun newInstance(position: Int, content: String) =
-            ScreenSlidePageFragment().apply {
+            ScreenSlidePageFragmentFire().apply {
                 arguments = Bundle().apply {
                     putInt(POSITION, position)
                     putString(CONTENT, content)

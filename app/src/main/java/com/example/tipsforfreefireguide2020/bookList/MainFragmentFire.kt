@@ -8,59 +8,59 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.tipsforfreefireguide2020.MainViewModel
+import com.example.tipsforfreefireguide2020.MainViewModelFire
 import com.example.tipsforfreefireguide2020.R
-import com.example.tipsforfreefireguide2020.databinding.FragmentMainBinding
+import com.example.tipsforfreefireguide2020.databinding.FragmentMainFireBinding
 import com.example.tipsforfreefireguide2020.util.EventObserver
-import com.example.tipsforfreefireguide2020.util.removeFullScreen
+import com.example.tipsforfreefireguide2020.util.removeFullScreenFire
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
-class MainFragment : Fragment() {
+class MainFragmentFire : Fragment() {
 
-    lateinit var viewDataBinding: FragmentMainBinding
-    lateinit var listAdapter: TasksAdapter
-    val viewModel: MainViewModel by sharedViewModel()
+    lateinit var viewDataBinding: FragmentMainFireBinding
+    lateinit var listAdapterFire: TasksAdapterFire
+    val viewModelFire: MainViewModelFire by sharedViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        removeFullScreen()
+        removeFullScreenFire()
         (activity as AppCompatActivity).supportActionBar?.show()
-        viewDataBinding = FragmentMainBinding.inflate(inflater, container, false).apply {
-            viewmodel = viewModel
+        viewDataBinding = FragmentMainFireBinding.inflate(inflater, container, false).apply {
+            viewmodel = viewModelFire
         }
         return viewDataBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.navigateToDetailEvent.observe(viewLifecycleOwner,
+        viewModelFire.navigateToDetailEvent.observe(viewLifecycleOwner,
             EventObserver {
                 findNavController().navigate(R.id.action_mainFragment_to_bookDetailFragment)
             })
-        viewModel.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
-            if (viewModel.interstitialAd.isLoaded) {
-                viewModel.interstitialAd.show()
+        viewModelFire.showAdvertEvent.observe(viewLifecycleOwner, EventObserver {
+            if (viewModelFire.interstitialAd.isLoaded) {
+                viewModelFire.interstitialAd.show()
             } else {
                 Log.d("Nurs", "mainfrag The interstitial wasn't loaded yet.")
             }
         })
-        initAdapter()
+        initAdapterFire()
     }
 
     override fun onPause() {
-        viewModel.adView?.pause()
+        viewModelFire.adView?.pause()
         super.onPause()
     }
 
     override fun onResume() {
         super.onResume()
-        viewModel.adView?.resume()
+        viewModelFire.adView?.resume()
     }
 
     override fun onDestroy() {
-        viewModel.adView?.destroy()
+        viewModelFire.adView?.destroy()
         super.onDestroy()
     }
 }

@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/appbackground" />
+        android:src="@drawable/appbackground_fire" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/content"
@@ -87,7 +87,7 @@
                     android:text="@{bookInfo.title}"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:textColor="@color/text_secondary_dark"
-                    android:textSize="22sp"
+                    android:textSize="23sp"
                     android:textStyle="bold"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -106,9 +106,9 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="15dp"
                     android:textColor="@color/text_color_primary_dark"
-                    android:textSize="20sp"
+                    android:textSize="21sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
